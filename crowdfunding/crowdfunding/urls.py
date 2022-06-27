@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import path, include
 
+
+#project stoped working on step 8
 urlpatterns = [
     path('admin/', admin.site.urls),
+
 ]
+
+urlpatterns = [
+    path('', include('projects.urls')),
+    ]

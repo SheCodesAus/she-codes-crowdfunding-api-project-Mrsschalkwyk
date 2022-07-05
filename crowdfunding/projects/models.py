@@ -9,9 +9,9 @@ class Project(models.Model):
     is_open = models.BooleanField()
     date_created = models.DateTimeField()
     owner = models.ForeignKey(
-        get_user_model()
-    ,on_delete=models.CASCADE,
-    related_name='owner_projects'
+        get_user_model(),
+        on_delete=models.CASCADE,
+        related_name='owner_projects'
     )
 
 
